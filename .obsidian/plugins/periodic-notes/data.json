@@ -8,13 +8,13 @@
   "weekly": {
     "enabled": true,
     "format": "YYYY-[W]ww",
-    "folder": "01-Daily",
+    "folder": "01-Weekly",
     "template": "08-Templates/weekly-review.md"
   },
   "monthly": {
     "enabled": true,
     "format": "YYYY-MM",
-    "folder": "01-Daily",
+    "folder": "01-Monthly",
     "template": "08-Templates/monthly-review.md"
   },
   "quarterly": {
