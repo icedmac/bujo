@@ -1,0 +1,19 @@
+{
+  "livePreview": true,
+  "strictLineBreaks": false,
+  "showFrontmatter": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showLineNumber": false,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "fr-FR",
+    "en-US"
+  ],
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "defaultViewMode": "source",
+  "attachmentFolderPath": "00-Inbox/attachments",
+  "promptDelete": true,
+  "alwaysUpdateLinks": true
+}

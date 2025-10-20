@@ -1,0 +1,41 @@
+# Obsidian workspace (local settings)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian cache
+.obsidian/cache/
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+
+# Obsidian trash
+.trash/
+
+# Temporary files
+*.tmp
+~$*
+
+# Attachments that are too large (optional - adjust as needed)
+# *.mp4
+# *.mov
+# *.avi
+
+# Personal notes you don't want to sync (optional)
+# 00-Inbox/private/
+
+# Keep these directories even if empty
+!00-Inbox/.gitkeep
+!01-Daily/.gitkeep
+!02-Projects/.gitkeep
+!03-Areas/.gitkeep
+!04-Resources/.gitkeep
+!05-Archives/.gitkeep
+!06-Zettelkasten/.gitkeep
+!07-Meetings/.gitkeep
+!08-Templates/.gitkeep

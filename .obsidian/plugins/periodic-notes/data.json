@@ -1,0 +1,26 @@
+{
+  "daily": {
+    "enabled": true,
+    "format": "YYYY-MM-DD",
+    "folder": "01-Daily",
+    "template": "08-Templates/daily-note.md"
+  },
+  "weekly": {
+    "enabled": true,
+    "format": "YYYY-[W]ww",
+    "folder": "01-Daily",
+    "template": "08-Templates/weekly-review.md"
+  },
+  "monthly": {
+    "enabled": true,
+    "format": "YYYY-MM",
+    "folder": "01-Daily",
+    "template": "08-Templates/monthly-review.md"
+  },
+  "quarterly": {
+    "enabled": false
+  },
+  "yearly": {
+    "enabled": false
+  }
+}
