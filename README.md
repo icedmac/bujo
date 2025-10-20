@@ -24,14 +24,16 @@ Système complet de gestion de projets professionnels combinant :
 ```
 📁 VaultName/
 ├── 📁 00-Inbox/              # Capture rapide (notes brutes, fichiers temporaires)
-├── 📁 01-Daily/              # Notes quotidiennes, hebdomadaires, mensuelles (BuJo)
+├── 📁 01-Daily/              # Notes quotidiennes (format YYYY-MM-DD)
+├── 📁 01-Weekly/             # Revues hebdomadaires (format YYYY-Www)
+├── 📁 01-Monthly/            # Revues mensuelles (format YYYY-MM)
 ├── 📁 02-Projects/           # PARA Projects (projets actifs par client)
 │   ├── ClientA-Refonte/
 │   ├── ClientB-Migration/
 │   └── ClientC-Audit/
 ├── 📁 03-Areas/              # PARA Areas (domaines de responsabilité permanents)
-│   ├── Competences-Techniques/
-│   └── Strategie-Innovation/
+│   ├── Technical-Skills/
+│   └── Strategy-Innovation/
 ├── 📁 04-Resources/          # PARA Resources (veille, références, bibliothèque)
 ├── 📁 05-Archives/           # PARA Archives (projets terminés, ancien contenu)
 ├── 📁 06-Zettelkasten/       # Notes de connaissances atomiques réutilisables
@@ -80,12 +82,12 @@ Système complet de gestion de projets professionnels combinant :
 
 - **Weekly notes** :
   - Format : `YYYY-[W]ww`
-  - Dossier : `01-Daily`
+  - Dossier : `01-Weekly` ⚠️ (dossier séparé)
   - Template : `08-Templates/weekly-review.md`
 
 - **Monthly notes** :
   - Format : `YYYY-MM`
-  - Dossier : `01-Daily`
+  - Dossier : `01-Monthly` ⚠️ (dossier séparé)
   - Template : `08-Templates/monthly-review.md`
 
 ### 2. Templater
@@ -175,7 +177,10 @@ Configure selon préférences (optionnel) :
 
 **Quand** : Vendredi après-midi ou Dimanche soir
 
-1. Créer **weekly note** via Calendar (cliquer sur numéro de semaine)
+1. Créer **weekly note** :
+   - Méthode 1 : Via Calendar (cliquer sur numéro de semaine)
+   - Méthode 2 : `Ctrl/Cmd + P` → "Open weekly note"
+   - Note créée dans `01-Weekly/` (ex: `2024-W42.md`)
 2. **Revue par projet** : avancement, blocages, prochaines étapes
 3. **Idées & Réflexions** : capturer insights de la semaine
 4. **Actions semaine prochaine** : planifier 3-5 actions clés
@@ -185,7 +190,10 @@ Configure selon préférences (optionnel) :
 
 **Quand** : Dernier jour du mois
 
-1. Créer **monthly note** via Calendar
+1. Créer **monthly note** :
+   - Méthode 1 : Via Calendar (créer manuellement dans `01-Monthly/`)
+   - Méthode 2 : `Ctrl/Cmd + P` → "Open monthly note"
+   - Note créée dans `01-Monthly/` (ex: `2024-10.md`)
 2. **Bilan objectifs** : taux de réalisation
 3. **Revue projets** : tableau de bord complet
 4. **Métriques** : KPIs et évolution
@@ -242,16 +250,25 @@ Exemples :
 **Responsabilités continues** sans date de fin
 
 Exemples :
-- `Competences-Techniques/` : veille techno, formations, certifications
-- `Strategie-Innovation/` : réflexions stratégiques, benchmarks
+- `Technical-Skills/` : compétences techniques, veille techno, formations, certifications
+- `Strategy-Innovation/` : stratégie, réflexions, innovations, veille business
+
+**Structure suggérée** :
+```
+03-Areas/
+└── Technical-Skills/
+    ├── _index.md (vue d'ensemble compétences)
+    └── notes-specific/
+```
 
 ### 📚 Resources (04-Resources)
-**Sujets d'intérêt** : références, veille, articles sauvegardés
+**Sujets d'intérêt** : références, veille, articles, checklists, guides
 
 Exemples :
-- `Design-Patterns/`
-- `Securite-Web/`
-- `Management-Equipe/`
+- `AWS-Documentation.md` : liens et ressources AWS
+- `Next-js-Performance-Checklist.md` : checklist optimisation performance
+- `Design-Patterns-Catalog.md` : catalogue patterns réutilisables
+- `Security-Resources.md` : guides sécurité, OWASP, etc.
 
 ### 🗄️ Archives (05-Archives)
 **Projets terminés**, ancien contenu
@@ -259,6 +276,14 @@ Exemples :
 Quand archiver :
 - Projet complété → déplacer de `02-Projects` vers `05-Archives`
 - Garder structure pour référence future
+
+**Structure** :
+```
+05-Archives/
+└── ClientX-MVP-Ecommerce/
+    ├── _index.md (résumé projet archivé)
+    └── docs/ (documentation projet)
+```
 
 ---
 
