@@ -444,5 +444,3 @@ git push
 ---
 
 **Bon courage dans ton organisation ! 🎯📔🧠**
-
-*Système créé avec Claude Code - Octobre 2024*
